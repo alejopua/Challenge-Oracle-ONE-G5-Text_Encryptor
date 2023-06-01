@@ -301,12 +301,13 @@ main {
 
 @media (max-width: 768px) {
     body {
+        height: 1174px;
         overflow: visible;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
-        margin: 20px 20px 0px 20px;
+        margin: 0px 20px 0px 20px;
     }
 
     main {
@@ -314,15 +315,19 @@ main {
         flex-direction: column;
         box-sizing: border-box;
         width: 100%;
-        height: 100vh;
+        height: auto;
         justify-content: center;
         align-items: center;
+    }
+    
+    .box-logo {
+        margin-top: 40px;
     }
 
     /* SECTION 1 */
     .text-area {
         margin-top: 20px;
-        height: 335px;
+        height: 49vh;
     }
 
     .buttons {
@@ -383,9 +388,9 @@ main {
 
 /* @MEDIA WIDTH -> 375PX */
 
-@media (max-width: 375px) {
+@media (max-width: 376px) {
     body {
-        height: -webkit-fill-available;
+        height: 933px;
     }
 
     main {
@@ -401,7 +406,7 @@ main {
     }
 
     .box-logo {
-        margin-top: 5px;
+        margin-top: 30px;
     }
 
     .logo {
@@ -417,7 +422,7 @@ main {
     .text-area {
         margin-top: 25px;
         width: -webkit-fill-available;
-        height: 295px;
+        height: 409px;
     }
 
     .buttons {
