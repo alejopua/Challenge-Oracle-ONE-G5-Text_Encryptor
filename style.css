@@ -75,9 +75,12 @@ main {
 }
 
 .rules {
+    width: 16px;
     height: -webkit-fill-available;
     margin-right: 5px;
-}.buttons {
+}
+
+.buttons {
     width: -webkit-fill-available;
     display: flex;
     justify-content: flex-start;
