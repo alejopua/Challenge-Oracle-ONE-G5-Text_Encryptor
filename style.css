@@ -1,6 +1,4 @@
-*,
-*::after,
-*::before {
+*{
     font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 25px;
@@ -11,20 +9,16 @@
 
 
 body {
-    display: flex;
-    flex-direction: column;
+    overflow: hidden;
     height: 100vh;
     margin: 0 20px 0 20px;
     padding: 0;
-    align-items: center;
-    justify-content: center;
-    box-sizing: border-box;
 }
 main {
     column-gap: 20px;
     box-sizing: border-box;
     width: 100%;
-    height: 100%;
+    height: 90vh;
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -39,7 +33,7 @@ main {
     display: flex;
     box-sizing: border-box;
     width: 100%;
-    height: 680px;
+    height: 100%;
     align-items: center;
     flex-direction: column;
     justify-content: center;
@@ -47,7 +41,7 @@ main {
 
 .text-area {
     width: -webkit-fill-available;
-    height: -webkit-fill-available;
+    height: 100%;
     border: none;
     text-transform: lowercase;
     color: #DCCCA3;
@@ -181,7 +175,8 @@ main {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    height: 680px;
+    width: 40%;
+    height: 100%;
     background: #7371FC;
     font-weight: bold;
     border: none;
@@ -276,7 +271,7 @@ main {
 }
 
 .footer {
-    height: 100%;
+    height: 8vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -287,14 +282,10 @@ main {
 /* @MEDIA WIDTH -> 768PX */
 
 @media (max-width: 768px) {
+
     body {
-        height: 100vh;
         overflow: visible;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        margin: 0px 20px 0px 20px;
+        height: 0;
     }
 
     main {
@@ -304,20 +295,27 @@ main {
         flex-direction: column;
         box-sizing: border-box;
         width: 100%;
-        height: 100vh;
+        height: auto;
         justify-content: center;
         align-items: center;
     }
     
     .box-logo {
         width: 100%;
-        height: -webkit-fill-available;
+        height: 8%;
     }
 
     /* SECTION 1 */
+    .section-1 {
+        display: flex;
+        height: 100%;
+        justify-content: flex-start;
+    }
+
     .text-area {
-        margin-top: 20px;
-        height: 49vh;
+        min-height: 500px;
+        height: 54vh;
+        margin-top: 0;
     }
 
     .buttons {
@@ -341,7 +339,7 @@ main {
 
     .section-2 {
         width: 100%;
-        height: 100%;
+        height: auto;
     }
 
     .mensaje {
@@ -376,12 +374,20 @@ main {
         position: static;
     }
 
+    .btn-copy:hover{
+        animation: none;
+    }
+
     .muñeco-msj {
         display: none;
     }
 
     .footer {
-        height: 100px;
+        min-height: 9%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
 }
@@ -392,21 +398,14 @@ main {
 /* @MEDIA WIDTH -> 375PX */
 
 @media (max-width: 376px) {
+
     body {
-        height: 100vh;
+        overflow: visible;
+        height: 100%;
     }
 
     main {
-        height: 100vh;
         margin-top: 0;
-    }
-
-    header {
-        width: -webkit-fill-available;
-        height: 110px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 
     .box-logo {
@@ -425,13 +424,14 @@ main {
     /* SECTION 1 */
     .section-1 {
         width: -webkit-fill-available;
-        height: -webkit-fill-available;
+        height: 100%;
     }
 
     .text-area {
         margin-top: 0px;
         width: -webkit-fill-available;
-        height: 320px;
+        height: 100%;
+        min-height: 40vh;
     }
 
     .buttons {
