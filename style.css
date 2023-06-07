@@ -39,7 +39,7 @@ main {
     justify-content: center;
 }
 
-.text-area {
+.textArea {
     width: -webkit-fill-available;
     height: 100%;
     border: none;
@@ -48,9 +48,10 @@ main {
     font-weight: bold;
     margin-top: 65px;
     resize: none;
+    word-break: break-all;
 }
 ::placeholder { color: #DCCCA3;}
-    .text-area:focus {
+    .textArea:focus {
         outline: none;
     }
 
@@ -80,7 +81,7 @@ main {
 }
 
 /* BOTÓN ENCRIPTAR */
-.btn-encryptar{
+.btn-encriptar{
     width: 48%;
     height: 52px;
     align-items: center;
@@ -94,10 +95,10 @@ main {
     font-weight: bold;
 }
 
-.btn-encryptar:hover{
-    animation-name: btn-encryptar;
-        -webkit-animation-name: btn-encryptar;
-        -moz-animation-name: btn-encryptar;
+.btn-encriptar:hover{
+    animation-name: btn-encriptar;
+        -webkit-animation-name: btn-encriptar;
+        -moz-animation-name: btn-encriptar;
     animation-duration: 1s;
         -webkit-animation-duration: 1s;
         -moz-animation-duration: 1s;
@@ -106,7 +107,7 @@ main {
         -moz-animation-iteration-count: infinite;
 }
 
-@keyframes btn-encryptar {
+@keyframes btn-encriptar {
     0%  {transform: translate(1px, 1px) rotate(0deg);}
     10% {transform: translate(-1px, -2px) rotate(-1deg);}
     20% {transform: translate(-3px, 0px) rotate(1deg);}
@@ -120,7 +121,7 @@ main {
     100% {transform: translate(1px, -2px) rotate(-1deg);}
 }
 
-.btn-encryptar:active {
+.btn-encriptar:active {
     background-color: #98D8AA;
 }
 
@@ -173,7 +174,7 @@ main {
 .section-2 {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     width: 40%;
     height: 100%;
@@ -185,12 +186,43 @@ main {
     box-shadow: 0 0 25px rgba(0,0,0,0.5);
 }
 
+.inactive {
+    display: none;
+}
+
+.viewBoxMsjEncriptado {
+    flex: 1;
+    background: none;
+    width: -webkit-fill-available;
+    height: 93%;
+}
+
+#msjEncriptado {
+    overflow-y: overlay;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 97%;
+    border: none;
+    margin-top: 0;
+    line-height: normal;
+    background: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffffff;
+    word-break: break-all;
+}
+
 .muñeco-msj {
+    flex: 0;
+    width: 100%;
     background: none;
     opacity: 0.7;
 }
 
 .box-text {
+    flex: 0;
     background: none;
 }
 
@@ -312,7 +344,7 @@ main {
         justify-content: flex-start;
     }
 
-    .text-area {
+    .textArea {
         min-height: 500px;
         height: 54vh;
         margin-top: 0;
@@ -323,11 +355,11 @@ main {
         justify-content: space-between;
     }
 
-    .btn-encryptar {
+    .btn-encriptar {
         margin-top: 0;
     }
 
-    .btn-encryptar:hover{
+    .btn-encriptar:hover{
         animation: none;
     }
 
@@ -427,7 +459,7 @@ main {
         height: 100%;
     }
 
-    .text-area {
+    .textArea {
         margin-top: 0px;
         width: -webkit-fill-available;
         height: 100%;
@@ -439,11 +471,11 @@ main {
         justify-content: center;
     }
 
-    .btn-encryptar {
+    .btn-encriptar {
         height: 60px;
     }
     
-    .btn-encryptar:hover{
+    .btn-encriptar:hover{
         animation: none;
     }
 
