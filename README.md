@@ -29,8 +29,8 @@ This exploratory project will immerse you in the fundamentals of encryption and 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/vintage.png)
 ### Dictionary
 
-## 🔒 Diccionario de encriptacion
-| 🔑 Llave | ✏️ Reemplazo |
+## 🔒 encryption
+| 🔑 Key | ✏️ Replacement |
 |-----------|-----------|
 | e | enter |
 | i | imes |
@@ -41,8 +41,8 @@ This exploratory project will immerse you in the fundamentals of encryption and 
 
 ---
 
-## 🔓 Diccionario de desencriptacion
-| 🔑 Llave | ✏️ Reemplazo |
+## 🔓 decryption
+| 🔑 Key | ✏️ Replacement |
 |-----------|-----------|
 | enter | e |
 | imes | i |
