@@ -3,8 +3,6 @@
 
 <br />
 
-<div align="center"><img src="/img/one.png" width="200"/></div>
-
 <p align="center">
 
 <div align="center"><img src="/img/one.png" width="200"/></div>
@@ -55,7 +53,7 @@ This exploratory project will immerse you in the fundamentals of encryption and 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/vintage.png)
 ### Rules
 
-- ✅ No deben ser utilizados letras con acentos ni caracteres especiales
+*Do not use letters with accents or special characters.
 
 ![-----------------------------------------------------](https://raw.githubusercontent.com/andreasbm/readme/master/assets/lines/vintage.png)
 <!-- CONTRIBUTING -->
