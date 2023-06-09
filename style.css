@@ -1,7 +1,6 @@
 *{
     font-family: 'Inter', sans-serif;
     font-weight: 400;
-    font-size: 25px;
     line-height: 150%;
     box-sizing: border-box;
     background: #30332E;
@@ -46,6 +45,7 @@ main {
     text-transform: lowercase;
     color: #DCCCA3;
     font-weight: bold;
+    font-size: 24px;
     margin-top: 65px;
     resize: none;
     word-break: break-all;
@@ -309,6 +309,18 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    color: #ffffffff;
+}
+
+.footer h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 6px;
+}
+
+a {
+    color: #ffffffff;
 }
 
 /* @MEDIA WIDTH -> 768PX */
